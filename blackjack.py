@@ -21,12 +21,13 @@ while q != 'yes' and q != 'no' :
     if sum(lst_sumcart) == 21 :
         print('you win :)')
         break
+
     elif sum(lst_sumcart) > 21 :
         break
 
-some = sum(lst_sumcart)         
+        
 if q == 'no' :
-    print(f'some of your carts : {some}')
+    print(f'some of your carts : {sum(lst_sumcart)}')
 
 
 sumcart_co = random.randint(14, 20)
@@ -36,5 +37,6 @@ if sum(lst_sumcart) < 21 :
 
 if sum(lst_sumcart) > sumcart_co and sum(lst_sumcart) < 21 :
     print('you win :)')
+
 else :
     print('you lose :(')
